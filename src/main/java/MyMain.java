@@ -16,7 +16,7 @@ public class MyMain {
             }
             if (count_6 == 0 ) count++;
         }
-        return 1 - ((double) count)/10000;
+        return (1 - ((double) count)/10000)*100;
 
     }
 
@@ -34,7 +34,7 @@ public class MyMain {
             }
             if (count_6 == 0 || count_6 == 1) count++;
         }
-        return 1 - ((double) count)/10000;
+        return (1 - ((double) count)/10000) * 100;
     }
 
     // Calculate the probability of rolling at least three 6's when rolling 
@@ -52,7 +52,7 @@ public class MyMain {
             if (count_6 == 0 || count_6 == 1 ||count_6 == 2) count++;
         }
         double probability = 1 - (double) count/10000;
-        return probability;
+        return probability * 100;
     }
 
 
